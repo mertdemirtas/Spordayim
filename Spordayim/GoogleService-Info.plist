@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>853012084257-kc3a9bjpsaj46tfi96dmmc075d3p7ig2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.853012084257-kc3a9bjpsaj46tfi96dmmc075d3p7ig2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyASs1CFuFQJA3krgSN3SClHOOLW3PDP2do</string>
+	<key>GCM_SENDER_ID</key>
+	<string>853012084257</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mertdemirtas.Spordayim</string>
+	<key>PROJECT_ID</key>
+	<string>spordayim-kou</string>
+	<key>STORAGE_BUCKET</key>
+	<string>spordayim-kou.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GIDClientID</key>
+	<string>853012084257-kc3a9bjpsaj46tfi96dmmc075d3p7ig2.apps.googleusercontent.com</string>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:853012084257:ios:239a4d7a5c910f1f945560</string>
+</dict>
+</plist>
