@@ -29,29 +29,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             
             else {
+                let homePage = TabBarControllerViewControllerData(viewController: MainMenuBuilder.build(), tabBarControllerImageName: "house")
+                
+                let settingsPage = TabBarControllerViewControllerData(viewController: SearchScreenBuilder.build(), tabBarControllerImageName: "magnifyingglass")
+                
+                let profilePage = TabBarControllerViewControllerData(viewController: UserProfileBuilder.build(), tabBarControllerImageName: "person")
+                
+                let tabBarData = TabBarControllerComponentData(items: [homePage, settingsPage, profilePage])
+                
+                let tabBar = TabBarComponent(with: tabBarData)
+                
                 self.window = UIWindow()
-                let rootViewController = MainMenuBuilder.build()
-                let navigationController = UINavigationController(rootViewController: rootViewController)
-                self.window?.rootViewController = navigationController
+                self.window?.rootViewController = tabBar
                 self.window?.overrideUserInterfaceStyle = .light
                 self.window?.makeKeyAndVisible()
             }
         }
-        
         return true
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        var handled: Bool
-        handled = GIDSignIn.sharedInstance.handle(url)
-        if handled {
-            return true
-        }
-        
-        // Handle other custom URL types.
-        
-        // If not handled by this app, return false.
-        return false
+        return GIDSignIn.sharedInstance.handle(url)
     }
 }
 

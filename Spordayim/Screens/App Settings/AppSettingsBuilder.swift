@@ -11,7 +11,7 @@ class AppSettingsBuilder {
     class func build() -> UIViewController {
         let viewModel = AppSettingsViewModel()
         let viewController = AppSettingsViewController(viewModel: viewModel)
-        viewController.title = "Settings"
+        viewController.title = "Ayarlar"
         return viewController
     }
 }

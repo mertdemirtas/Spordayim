@@ -11,7 +11,7 @@ class MainMenuBuilder {
     class func build() -> UIViewController {
         let viewModel = MainMenuViewModel()
         let viewController = MainMenuViewController(viewModel: viewModel)
-        viewController.title = "Spordayim"
+        viewController.title = "Ana Sayfa"
         return viewController
     }
 }

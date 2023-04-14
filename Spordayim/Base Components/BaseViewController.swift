@@ -28,7 +28,7 @@ class BaseViewController<T: BaseViewModel>: UIViewController {
     convenience init(viewModel: T) {
         self.init()
         self.viewModel = viewModel
-     //   viewModel.networkStateDelegate = self
+        //   viewModel.networkStateDelegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,13 +52,13 @@ class BaseViewController<T: BaseViewModel>: UIViewController {
         nav.largeTitleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 32, weight: .medium)]
         
         let navBar = self.navigationController?.navigationBar
-        
+        navBar?.prefersLargeTitles = true
         navBar?.tintColor = .white
         navBar?.isTranslucent = true
         navBar?.standardAppearance = nav
         navBar?.scrollEdgeAppearance = nav
         navBar?.compactAppearance = nav
-        }
+    }
     
     func addViewComponents() { }
 }

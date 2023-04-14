@@ -6,16 +6,19 @@
 //
 
 import GoogleSignIn
+import FirebaseAuth
 
 class AppSettingsViewModel: BaseViewModel {
     
     
     public func signOut() -> Bool {
+        let firebaseAuth = Auth.auth()
         do {
-            try GIDSignIn.sharedInstance.signOut()
+            try firebaseAuth.signOut()
+            GIDSignIn.sharedInstance.signOut()
             return true
-        }
-        catch {
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
             return false
         }
     }

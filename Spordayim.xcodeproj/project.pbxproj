@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401E6FBC29E9968D00073410 /* TabBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FBB29E9968D00073410 /* TabBarComponent.swift */; };
+		401E6FBF29E9971600073410 /* TabBarControllerComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FBE29E9971600073410 /* TabBarControllerComponentData.swift */; };
+		401E6FC129E99ADA00073410 /* TabBarControllerViewControllerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FC029E99ADA00073410 /* TabBarControllerViewControllerData.swift */; };
+		401E6FC429E9B0C500073410 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FC329E9B0C500073410 /* UserProfileViewController.swift */; };
+		401E6FC629E9B0D000073410 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FC529E9B0D000073410 /* UserProfileViewModel.swift */; };
+		401E6FC829E9B0DC00073410 /* UserProfileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FC729E9B0DC00073410 /* UserProfileBuilder.swift */; };
+		401E6FCC29E9BF3F00073410 /* ImageViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FCA29E9BF3F00073410 /* ImageViewComponent.swift */; };
+		401E6FCD29E9BF3F00073410 /* ImageViewComponentEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FCB29E9BF3F00073410 /* ImageViewComponentEnum.swift */; };
+		401E6FD129E9BFA700073410 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FD029E9BFA700073410 /* ImageCacheManager.swift */; };
+		401E6FD329E9C06000073410 /* UserProfileInformationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FD229E9C06000073410 /* UserProfileInformationData.swift */; };
+		401E6FD629E9CC5A00073410 /* UserProfileInformationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FD529E9CC5A00073410 /* UserProfileInformationComponent.swift */; };
+		401E6FD829E9CC6600073410 /* UserProfileInformationComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FD729E9CC6600073410 /* UserProfileInformationComponentData.swift */; };
+		401E6FDB29E9D56100073410 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FDA29E9D56100073410 /* SearchController.swift */; };
+		401E6FDD29E9D57300073410 /* SearchControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FDC29E9D57300073410 /* SearchControllerViewModel.swift */; };
+		401E6FDF29E9D5D400073410 /* SearchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FDE29E9D5D400073410 /* SearchScreenViewController.swift */; };
+		401E6FE229E9D61D00073410 /* SearchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FE129E9D61D00073410 /* SearchScreenViewModel.swift */; };
+		401E6FE429E9D68400073410 /* SearchScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FE329E9D68400073410 /* SearchScreenBuilder.swift */; };
 		4030027029D7126A00899CF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4030026F29D7126A00899CF5 /* AppDelegate.swift */; };
 		4030027929D7126C00899CF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4030027829D7126C00899CF5 /* Assets.xcassets */; };
 		4030027C29D7126C00899CF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4030027A29D7126C00899CF5 /* LaunchScreen.storyboard */; };
@@ -56,6 +73,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		401E6FBB29E9968D00073410 /* TabBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarComponent.swift; sourceTree = "<group>"; };
+		401E6FBE29E9971600073410 /* TabBarControllerComponentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerComponentData.swift; sourceTree = "<group>"; };
+		401E6FC029E99ADA00073410 /* TabBarControllerViewControllerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerViewControllerData.swift; sourceTree = "<group>"; };
+		401E6FC329E9B0C500073410 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		401E6FC529E9B0D000073410 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		401E6FC729E9B0DC00073410 /* UserProfileBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileBuilder.swift; sourceTree = "<group>"; };
+		401E6FCA29E9BF3F00073410 /* ImageViewComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewComponent.swift; sourceTree = "<group>"; };
+		401E6FCB29E9BF3F00073410 /* ImageViewComponentEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewComponentEnum.swift; sourceTree = "<group>"; };
+		401E6FD029E9BFA700073410 /* ImageCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		401E6FD229E9C06000073410 /* UserProfileInformationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileInformationData.swift; sourceTree = "<group>"; };
+		401E6FD529E9CC5A00073410 /* UserProfileInformationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileInformationComponent.swift; sourceTree = "<group>"; };
+		401E6FD729E9CC6600073410 /* UserProfileInformationComponentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileInformationComponentData.swift; sourceTree = "<group>"; };
+		401E6FDA29E9D56100073410 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		401E6FDC29E9D57300073410 /* SearchControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchControllerViewModel.swift; sourceTree = "<group>"; };
+		401E6FDE29E9D5D400073410 /* SearchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenViewController.swift; sourceTree = "<group>"; };
+		401E6FE129E9D61D00073410 /* SearchScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenViewModel.swift; sourceTree = "<group>"; };
+		401E6FE329E9D68400073410 /* SearchScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenBuilder.swift; sourceTree = "<group>"; };
 		4030026C29D7126A00899CF5 /* Spordayim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spordayim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4030026F29D7126A00899CF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4030027829D7126C00899CF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +151,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		401E6FBD29E996C300073410 /* Tab Bar Component */ = {
+			isa = PBXGroup;
+			children = (
+				401E6FBB29E9968D00073410 /* TabBarComponent.swift */,
+				401E6FBE29E9971600073410 /* TabBarControllerComponentData.swift */,
+				401E6FC029E99ADA00073410 /* TabBarControllerViewControllerData.swift */,
+			);
+			path = "Tab Bar Component";
+			sourceTree = "<group>";
+		};
+		401E6FC229E9B0AC00073410 /* User Profile */ = {
+			isa = PBXGroup;
+			children = (
+				401E6FC329E9B0C500073410 /* UserProfileViewController.swift */,
+				401E6FC529E9B0D000073410 /* UserProfileViewModel.swift */,
+				401E6FC729E9B0DC00073410 /* UserProfileBuilder.swift */,
+				401E6FD229E9C06000073410 /* UserProfileInformationData.swift */,
+			);
+			path = "User Profile";
+			sourceTree = "<group>";
+		};
+		401E6FC929E9BF3F00073410 /* Image View Component */ = {
+			isa = PBXGroup;
+			children = (
+				401E6FCA29E9BF3F00073410 /* ImageViewComponent.swift */,
+				401E6FCB29E9BF3F00073410 /* ImageViewComponentEnum.swift */,
+			);
+			path = "Image View Component";
+			sourceTree = "<group>";
+		};
+		401E6FCE29E9BF9700073410 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				401E6FCF29E9BFA700073410 /* Image Cache Manager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		401E6FCF29E9BFA700073410 /* Image Cache Manager */ = {
+			isa = PBXGroup;
+			children = (
+				401E6FD029E9BFA700073410 /* ImageCacheManager.swift */,
+			);
+			path = "Image Cache Manager";
+			sourceTree = "<group>";
+		};
+		401E6FD429E9CC2A00073410 /* Profile Information Component */ = {
+			isa = PBXGroup;
+			children = (
+				401E6FD529E9CC5A00073410 /* UserProfileInformationComponent.swift */,
+				401E6FD729E9CC6600073410 /* UserProfileInformationComponentData.swift */,
+			);
+			path = "Profile Information Component";
+			sourceTree = "<group>";
+		};
+		401E6FD929E9D54A00073410 /* Search Controller */ = {
+			isa = PBXGroup;
+			children = (
+				401E6FDA29E9D56100073410 /* SearchController.swift */,
+				401E6FDC29E9D57300073410 /* SearchControllerViewModel.swift */,
+			);
+			path = "Search Controller";
+			sourceTree = "<group>";
+		};
+		401E6FE029E9D5DF00073410 /* Search Screen */ = {
+			isa = PBXGroup;
+			children = (
+				401E6FDE29E9D5D400073410 /* SearchScreenViewController.swift */,
+				401E6FE129E9D61D00073410 /* SearchScreenViewModel.swift */,
+				401E6FE329E9D68400073410 /* SearchScreenBuilder.swift */,
+			);
+			path = "Search Screen";
+			sourceTree = "<group>";
+		};
 		4030026329D7126A00899CF5 = {
 			isa = PBXGroup;
 			children = (
@@ -136,11 +244,12 @@
 		4030026E29D7126A00899CF5 /* Spordayim */ = {
 			isa = PBXGroup;
 			children = (
-				403002CA29D71E2C00899CF5 /* Assets */,
 				403002B529D712D900899CF5 /* App Files */,
+				403002CA29D71E2C00899CF5 /* Assets */,
 				403002B029D712D400899CF5 /* Support Files */,
 				4030028329D712AF00899CF5 /* Base Components */,
 				4030029C29D712B900899CF5 /* Components */,
+				401E6FCE29E9BF9700073410 /* Managers */,
 				403002A829D712CE00899CF5 /* Screens */,
 				403002A329D712C700899CF5 /* Extensions */,
 				4030027A29D7126C00899CF5 /* LaunchScreen.storyboard */,
@@ -172,6 +281,10 @@
 		4030029C29D712B900899CF5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				401E6FD929E9D54A00073410 /* Search Controller */,
+				401E6FD429E9CC2A00073410 /* Profile Information Component */,
+				401E6FC929E9BF3F00073410 /* Image View Component */,
+				401E6FBD29E996C300073410 /* Tab Bar Component */,
 				403002DE29D736CC00899CF5 /* Navigation Bar Settings Button */,
 				4030029D29D712B900899CF5 /* Google Sign-In Button */,
 				4030029F29D712B900899CF5 /* Loading View Component */,
@@ -208,10 +321,12 @@
 		403002A829D712CE00899CF5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				403002E329D73CDE00899CF5 /* App Settings */,
+				403002A929D712CE00899CF5 /* Login Page */,
 				403002D629D72ADE00899CF5 /* User Profile Information Screens */,
 				403002CD29D727B300899CF5 /* Main Menu */,
-				403002A929D712CE00899CF5 /* Login Page */,
+				401E6FE029E9D5DF00073410 /* Search Screen */,
+				401E6FC229E9B0AC00073410 /* User Profile */,
+				403002E329D73CDE00899CF5 /* App Settings */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -391,34 +506,51 @@
 				403002AE29D712CE00899CF5 /* LoginPageBuilder.swift in Sources */,
 				4030029A29D712AF00899CF5 /* BaseView.swift in Sources */,
 				403002E729D73D0A00899CF5 /* AppSettingsBuilder.swift in Sources */,
+				401E6FCD29E9BF3F00073410 /* ImageViewComponentEnum.swift in Sources */,
 				403002D929D72B6500899CF5 /* SceneOneViewController.swift in Sources */,
 				4030029129D712AF00899CF5 /* BaseViewController.swift in Sources */,
+				401E6FBF29E9971600073410 /* TabBarControllerComponentData.swift in Sources */,
+				401E6FC829E9B0DC00073410 /* UserProfileBuilder.swift in Sources */,
 				403002A629D712C700899CF5 /* UIColor+Extension.swift in Sources */,
+				401E6FE429E9D68400073410 /* SearchScreenBuilder.swift in Sources */,
 				403002DD29D72B7700899CF5 /* SceneOneBuilder.swift in Sources */,
 				403002E029D736E900899CF5 /* NavigationBarSettingsButton.swift in Sources */,
 				403002AD29D712CE00899CF5 /* LoginPageViewModel.swift in Sources */,
 				403002E229D7371000899CF5 /* NavigationBarSettingsButtonData.swift in Sources */,
 				403002E529D73D0100899CF5 /* AppSettingsViewController.swift in Sources */,
 				403002CC29D7224700899CF5 /* SignInButtonData.swift in Sources */,
+				401E6FC629E9B0D000073410 /* UserProfileViewModel.swift in Sources */,
+				401E6FD129E9BFA700073410 /* ImageCacheManager.swift in Sources */,
 				403002D529D7290000899CF5 /* MainMenuRouter.swift in Sources */,
+				401E6FDF29E9D5D400073410 /* SearchScreenViewController.swift in Sources */,
 				403002DB29D72B6D00899CF5 /* SceneOneViewModel.swift in Sources */,
 				4030029429D712AF00899CF5 /* GenericCollectionViewCell.swift in Sources */,
 				4030029529D712AF00899CF5 /* GenericBaseView.swift in Sources */,
 				4030027029D7126A00899CF5 /* AppDelegate.swift in Sources */,
 				4030029629D712AF00899CF5 /* BaseSearchController.swift in Sources */,
+				401E6FD829E9CC6600073410 /* UserProfileInformationComponentData.swift in Sources */,
 				403002A129D712B900899CF5 /* GoogleSignInButton.swift in Sources */,
 				403002AF29D712CE00899CF5 /* LoginPageViewController.swift in Sources */,
+				401E6FC129E99ADA00073410 /* TabBarControllerViewControllerData.swift in Sources */,
+				401E6FCC29E9BF3F00073410 /* ImageViewComponent.swift in Sources */,
 				4030029829D712AF00899CF5 /* BaseTableView.swift in Sources */,
 				4030029229D712AF00899CF5 /* BaseTableViewCell.swift in Sources */,
+				401E6FD329E9C06000073410 /* UserProfileInformationData.swift in Sources */,
 				403002D129D727E500899CF5 /* MainMenuViewModel.swift in Sources */,
 				403002A729D712C700899CF5 /* UIView+Extension.swift in Sources */,
+				401E6FDD29E9D57300073410 /* SearchControllerViewModel.swift in Sources */,
 				4030029029D712AF00899CF5 /* BaseCollectionView.swift in Sources */,
 				4030029B29D712AF00899CF5 /* BaseButton.swift in Sources */,
 				403002B429D712D400899CF5 /* GenericDataProtocol.swift in Sources */,
+				401E6FE229E9D61D00073410 /* SearchScreenViewModel.swift in Sources */,
 				4030029929D712AF00899CF5 /* GenericTableViewCell.swift in Sources */,
+				401E6FD629E9CC5A00073410 /* UserProfileInformationComponent.swift in Sources */,
+				401E6FC429E9B0C500073410 /* UserProfileViewController.swift in Sources */,
+				401E6FDB29E9D56100073410 /* SearchController.swift in Sources */,
 				4030029329D712AF00899CF5 /* BaseCollectionViewCell.swift in Sources */,
 				4030029729D712AF00899CF5 /* BaseLabel.swift in Sources */,
 				403002E929D73D1300899CF5 /* AppSettingsViewModel.swift in Sources */,
+				401E6FBC29E9968D00073410 /* TabBarComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
