@@ -14,7 +14,7 @@ class LoginPageViewController: BaseViewController<LoginPageViewModel> {
         temp.setData(by: SignInButtonData(image: "google", signInText: "Sign in with Google"))
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.setButtonAction { [weak self] in
-            self?.viewModel.auth(viewController: self)
+            self?.viewModel.authUser(viewController: self)
         }
         return temp
     }()

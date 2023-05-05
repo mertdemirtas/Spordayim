@@ -7,6 +7,6 @@
 
 import Foundation
 
-class SceneOneViewModel: BaseViewModel {
+class CitySelectionViewModel: BaseViewModel {
     
 }

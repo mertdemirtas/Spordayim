@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400A72E92A03F40900A6E1B8 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A72E82A03F40900A6E1B8 /* FirebaseManager.swift */; };
+		400A72EC2A04448A00A6E1B8 /* ProfileInformationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A72EB2A04448A00A6E1B8 /* ProfileInformationComponent.swift */; };
+		400A72EF2A044AA800A6E1B8 /* SelectionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A72EE2A044AA800A6E1B8 /* SelectionComponent.swift */; };
+		400A72F22A044ADF00A6E1B8 /* SelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A72F12A044ADF00A6E1B8 /* SelectionTableViewCell.swift */; };
+		400A72F42A044B4400A6E1B8 /* SelectionTableViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A72F32A044B4400A6E1B8 /* SelectionTableViewCellData.swift */; };
+		400A72F62A044B7400A6E1B8 /* SelectionCardViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A72F52A044B7400A6E1B8 /* SelectionCardViewButton.swift */; };
+		400A72F82A0521FB00A6E1B8 /* CitiesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A72F72A0521FB00A6E1B8 /* CitiesHelper.swift */; };
 		401E6FBC29E9968D00073410 /* TabBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FBB29E9968D00073410 /* TabBarComponent.swift */; };
 		401E6FBF29E9971600073410 /* TabBarControllerComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FBE29E9971600073410 /* TabBarControllerComponentData.swift */; };
 		401E6FC129E99ADA00073410 /* TabBarControllerViewControllerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FC029E99ADA00073410 /* TabBarControllerViewControllerData.swift */; };
@@ -62,9 +69,9 @@
 		403002D129D727E500899CF5 /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403002D029D727E500899CF5 /* MainMenuViewModel.swift */; };
 		403002D329D7282500899CF5 /* MainMenuBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403002D229D7282500899CF5 /* MainMenuBuilder.swift */; };
 		403002D529D7290000899CF5 /* MainMenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403002D429D7290000899CF5 /* MainMenuRouter.swift */; };
-		403002D929D72B6500899CF5 /* SceneOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403002D829D72B6500899CF5 /* SceneOneViewController.swift */; };
-		403002DB29D72B6D00899CF5 /* SceneOneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403002DA29D72B6D00899CF5 /* SceneOneViewModel.swift */; };
-		403002DD29D72B7700899CF5 /* SceneOneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403002DC29D72B7700899CF5 /* SceneOneBuilder.swift */; };
+		403002D929D72B6500899CF5 /* CitySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403002D829D72B6500899CF5 /* CitySelectionViewController.swift */; };
+		403002DB29D72B6D00899CF5 /* CitySelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403002DA29D72B6D00899CF5 /* CitySelectionViewModel.swift */; };
+		403002DD29D72B7700899CF5 /* CitySelectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403002DC29D72B7700899CF5 /* CitySelectionBuilder.swift */; };
 		403002E029D736E900899CF5 /* NavigationBarSettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403002DF29D736E900899CF5 /* NavigationBarSettingsButton.swift */; };
 		403002E229D7371000899CF5 /* NavigationBarSettingsButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403002E129D7371000899CF5 /* NavigationBarSettingsButtonData.swift */; };
 		403002E529D73D0100899CF5 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403002E429D73D0100899CF5 /* AppSettingsViewController.swift */; };
@@ -73,6 +80,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		400A72E82A03F40900A6E1B8 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		400A72EB2A04448A00A6E1B8 /* ProfileInformationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInformationComponent.swift; sourceTree = "<group>"; };
+		400A72EE2A044AA800A6E1B8 /* SelectionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionComponent.swift; sourceTree = "<group>"; };
+		400A72F12A044ADF00A6E1B8 /* SelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTableViewCell.swift; sourceTree = "<group>"; };
+		400A72F32A044B4400A6E1B8 /* SelectionTableViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTableViewCellData.swift; sourceTree = "<group>"; };
+		400A72F52A044B7400A6E1B8 /* SelectionCardViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCardViewButton.swift; sourceTree = "<group>"; };
+		400A72F72A0521FB00A6E1B8 /* CitiesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesHelper.swift; sourceTree = "<group>"; };
 		401E6FBB29E9968D00073410 /* TabBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarComponent.swift; sourceTree = "<group>"; };
 		401E6FBE29E9971600073410 /* TabBarControllerComponentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerComponentData.swift; sourceTree = "<group>"; };
 		401E6FC029E99ADA00073410 /* TabBarControllerViewControllerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerViewControllerData.swift; sourceTree = "<group>"; };
@@ -122,9 +136,9 @@
 		403002D029D727E500899CF5 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
 		403002D229D7282500899CF5 /* MainMenuBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuBuilder.swift; sourceTree = "<group>"; };
 		403002D429D7290000899CF5 /* MainMenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuRouter.swift; sourceTree = "<group>"; };
-		403002D829D72B6500899CF5 /* SceneOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneOneViewController.swift; sourceTree = "<group>"; };
-		403002DA29D72B6D00899CF5 /* SceneOneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneOneViewModel.swift; sourceTree = "<group>"; };
-		403002DC29D72B7700899CF5 /* SceneOneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneOneBuilder.swift; sourceTree = "<group>"; };
+		403002D829D72B6500899CF5 /* CitySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionViewController.swift; sourceTree = "<group>"; };
+		403002DA29D72B6D00899CF5 /* CitySelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionViewModel.swift; sourceTree = "<group>"; };
+		403002DC29D72B7700899CF5 /* CitySelectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionBuilder.swift; sourceTree = "<group>"; };
 		403002DF29D736E900899CF5 /* NavigationBarSettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarSettingsButton.swift; sourceTree = "<group>"; };
 		403002E129D7371000899CF5 /* NavigationBarSettingsButtonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarSettingsButtonData.swift; sourceTree = "<group>"; };
 		403002E429D73D0100899CF5 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +165,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		400A72E72A03F3F800A6E1B8 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				400A72E82A03F40900A6E1B8 /* FirebaseManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		400A72EA2A04446100A6E1B8 /* Profile Create Information Component */ = {
+			isa = PBXGroup;
+			children = (
+				400A72EB2A04448A00A6E1B8 /* ProfileInformationComponent.swift */,
+			);
+			path = "Profile Create Information Component";
+			sourceTree = "<group>";
+		};
+		400A72ED2A044A6000A6E1B8 /* Selection Component */ = {
+			isa = PBXGroup;
+			children = (
+				400A72F02A044ACE00A6E1B8 /* Selection Table View Cell */,
+				400A72EE2A044AA800A6E1B8 /* SelectionComponent.swift */,
+			);
+			path = "Selection Component";
+			sourceTree = "<group>";
+		};
+		400A72F02A044ACE00A6E1B8 /* Selection Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				400A72F12A044ADF00A6E1B8 /* SelectionTableViewCell.swift */,
+				400A72F32A044B4400A6E1B8 /* SelectionTableViewCellData.swift */,
+				400A72F52A044B7400A6E1B8 /* SelectionCardViewButton.swift */,
+			);
+			path = "Selection Table View Cell";
+			sourceTree = "<group>";
+		};
 		401E6FBD29E996C300073410 /* Tab Bar Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +233,7 @@
 		401E6FCE29E9BF9700073410 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				400A72E72A03F3F800A6E1B8 /* Firebase */,
 				401E6FCF29E9BFA700073410 /* Image Cache Manager */,
 			);
 			path = Managers;
@@ -281,6 +331,8 @@
 		4030029C29D712B900899CF5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				400A72ED2A044A6000A6E1B8 /* Selection Component */,
+				400A72EA2A04446100A6E1B8 /* Profile Create Information Component */,
 				401E6FD929E9D54A00073410 /* Search Controller */,
 				401E6FD429E9CC2A00073410 /* Profile Information Component */,
 				401E6FC929E9BF3F00073410 /* Image View Component */,
@@ -346,6 +398,7 @@
 			children = (
 				403002B129D712D400899CF5 /* BaseViewModel.swift */,
 				403002B229D712D400899CF5 /* GenericDataProtocol.swift */,
+				400A72F72A0521FB00A6E1B8 /* CitiesHelper.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -380,19 +433,19 @@
 		403002D629D72ADE00899CF5 /* User Profile Information Screens */ = {
 			isa = PBXGroup;
 			children = (
-				403002D729D72B5100899CF5 /* Scene One */,
+				403002D729D72B5100899CF5 /* City Selection */,
 			);
 			path = "User Profile Information Screens";
 			sourceTree = "<group>";
 		};
-		403002D729D72B5100899CF5 /* Scene One */ = {
+		403002D729D72B5100899CF5 /* City Selection */ = {
 			isa = PBXGroup;
 			children = (
-				403002D829D72B6500899CF5 /* SceneOneViewController.swift */,
-				403002DA29D72B6D00899CF5 /* SceneOneViewModel.swift */,
-				403002DC29D72B7700899CF5 /* SceneOneBuilder.swift */,
+				403002D829D72B6500899CF5 /* CitySelectionViewController.swift */,
+				403002DA29D72B6D00899CF5 /* CitySelectionViewModel.swift */,
+				403002DC29D72B7700899CF5 /* CitySelectionBuilder.swift */,
 			);
-			path = "Scene One";
+			path = "City Selection";
 			sourceTree = "<group>";
 		};
 		403002DE29D736CC00899CF5 /* Navigation Bar Settings Button */ = {
@@ -504,16 +557,19 @@
 				403002B329D712D400899CF5 /* BaseViewModel.swift in Sources */,
 				403002A229D712B900899CF5 /* LoadingViewComponent.swift in Sources */,
 				403002AE29D712CE00899CF5 /* LoginPageBuilder.swift in Sources */,
+				400A72F62A044B7400A6E1B8 /* SelectionCardViewButton.swift in Sources */,
 				4030029A29D712AF00899CF5 /* BaseView.swift in Sources */,
 				403002E729D73D0A00899CF5 /* AppSettingsBuilder.swift in Sources */,
+				400A72EF2A044AA800A6E1B8 /* SelectionComponent.swift in Sources */,
 				401E6FCD29E9BF3F00073410 /* ImageViewComponentEnum.swift in Sources */,
-				403002D929D72B6500899CF5 /* SceneOneViewController.swift in Sources */,
+				403002D929D72B6500899CF5 /* CitySelectionViewController.swift in Sources */,
 				4030029129D712AF00899CF5 /* BaseViewController.swift in Sources */,
 				401E6FBF29E9971600073410 /* TabBarControllerComponentData.swift in Sources */,
 				401E6FC829E9B0DC00073410 /* UserProfileBuilder.swift in Sources */,
 				403002A629D712C700899CF5 /* UIColor+Extension.swift in Sources */,
 				401E6FE429E9D68400073410 /* SearchScreenBuilder.swift in Sources */,
-				403002DD29D72B7700899CF5 /* SceneOneBuilder.swift in Sources */,
+				400A72EC2A04448A00A6E1B8 /* ProfileInformationComponent.swift in Sources */,
+				403002DD29D72B7700899CF5 /* CitySelectionBuilder.swift in Sources */,
 				403002E029D736E900899CF5 /* NavigationBarSettingsButton.swift in Sources */,
 				403002AD29D712CE00899CF5 /* LoginPageViewModel.swift in Sources */,
 				403002E229D7371000899CF5 /* NavigationBarSettingsButtonData.swift in Sources */,
@@ -521,9 +577,10 @@
 				403002CC29D7224700899CF5 /* SignInButtonData.swift in Sources */,
 				401E6FC629E9B0D000073410 /* UserProfileViewModel.swift in Sources */,
 				401E6FD129E9BFA700073410 /* ImageCacheManager.swift in Sources */,
+				400A72F22A044ADF00A6E1B8 /* SelectionTableViewCell.swift in Sources */,
 				403002D529D7290000899CF5 /* MainMenuRouter.swift in Sources */,
 				401E6FDF29E9D5D400073410 /* SearchScreenViewController.swift in Sources */,
-				403002DB29D72B6D00899CF5 /* SceneOneViewModel.swift in Sources */,
+				403002DB29D72B6D00899CF5 /* CitySelectionViewModel.swift in Sources */,
 				4030029429D712AF00899CF5 /* GenericCollectionViewCell.swift in Sources */,
 				4030029529D712AF00899CF5 /* GenericBaseView.swift in Sources */,
 				4030027029D7126A00899CF5 /* AppDelegate.swift in Sources */,
@@ -540,11 +597,14 @@
 				403002A729D712C700899CF5 /* UIView+Extension.swift in Sources */,
 				401E6FDD29E9D57300073410 /* SearchControllerViewModel.swift in Sources */,
 				4030029029D712AF00899CF5 /* BaseCollectionView.swift in Sources */,
+				400A72E92A03F40900A6E1B8 /* FirebaseManager.swift in Sources */,
 				4030029B29D712AF00899CF5 /* BaseButton.swift in Sources */,
 				403002B429D712D400899CF5 /* GenericDataProtocol.swift in Sources */,
 				401E6FE229E9D61D00073410 /* SearchScreenViewModel.swift in Sources */,
 				4030029929D712AF00899CF5 /* GenericTableViewCell.swift in Sources */,
 				401E6FD629E9CC5A00073410 /* UserProfileInformationComponent.swift in Sources */,
+				400A72F82A0521FB00A6E1B8 /* CitiesHelper.swift in Sources */,
+				400A72F42A044B4400A6E1B8 /* SelectionTableViewCellData.swift in Sources */,
 				401E6FC429E9B0C500073410 /* UserProfileViewController.swift in Sources */,
 				401E6FDB29E9D56100073410 /* SearchController.swift in Sources */,
 				4030029329D712AF00899CF5 /* BaseCollectionViewCell.swift in Sources */,

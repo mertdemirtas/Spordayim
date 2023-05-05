@@ -7,10 +7,10 @@
 
 import UIKit
 
-class SceneOneBuilder {
+class CitySelectionBuilder {
     class func build() -> UIViewController {
-        let viewModel = SceneOneViewModel()
-        let viewController = SceneOneViewController(viewModel: viewModel)
+        let viewModel = CitySelectionViewModel()
+        let viewController = CitySelectionViewController(viewModel: viewModel)
         return viewController
     }
 }

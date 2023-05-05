@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SceneOneViewController: BaseViewController<SceneOneViewModel> {
+class CitySelectionViewController: BaseViewController<CitySelectionViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
     }

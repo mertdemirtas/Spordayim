@@ -9,5 +9,8 @@ import Foundation
 import FirebaseAuth
 
 class MainMenuViewModel: BaseViewModel {
-    
+    func getData() {
+        let fireBaseManager = FirebaseMaganer()
+        
+    }
 }
