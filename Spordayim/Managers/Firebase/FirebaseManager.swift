@@ -11,10 +11,13 @@ import FirebaseFirestore
 import FirebaseAuth
 
 struct ProfileData {
-    let name: String?
-    let email: String?
-    let userUID: String?
-    let username: String?
+    let name: String
+    let uid: String
+    let email: String
+    let city: String
+    let district: String
+    let role: String
+    let credential: AuthCredential
 }
 
 class FirebaseMaganer {
@@ -24,14 +27,16 @@ class FirebaseMaganer {
     private let usersCollection = "users"
     
     
-    func authUser(with credential: AuthCredential, completionHandler: @escaping (Bool) -> Void) {
+    func authUser(with credential: AuthCredential, completionHandler: @escaping (String) -> Void) {
         Auth.auth().signIn(with: credential) { result, error in
             guard error == nil else { return }
-            completionHandler(true)
+            guard let userUid = result?.user.uid else { return }
+            
+            completionHandler(userUid)
         }
     }
     
-    func createDataForUser(with credential: AuthCredential, completionHandler: @escaping (Bool) -> Void) {
+    func createDataForUser(with credential: AuthCredential, userData: ProfileData, completionHandler: @escaping (Bool) -> Void) {
         
         Auth.auth().signIn(with: credential) { result, error in
             guard error == nil else { return }
@@ -40,10 +45,13 @@ class FirebaseMaganer {
             guard let name = authUser.displayName else { return }
             let uid = authUser.uid
             
-            let data = ["name": name,
-                        "email": authUser.email,
-                        "uid": uid,
-                        "username": ""]
+            let data = ["name": userData.name,
+                        "email": userData.email,
+                        "uid": userData.uid,
+                        "username": "",
+                        "il": userData.city,
+                        "ilce": userData.district,
+                        "role": userData.role]
             
             
             self.checkUserInDatabase(with: credential, completion: { success in

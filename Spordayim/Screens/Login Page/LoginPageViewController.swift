@@ -13,14 +13,23 @@ class LoginPageViewController: BaseViewController<LoginPageViewModel> {
         let temp = GoogleSignInButton()
         temp.setData(by: SignInButtonData(image: "google", signInText: "Sign in with Google"))
         temp.translatesAutoresizingMaskIntoConstraints = false
-        temp.setButtonAction { [weak self] in
-            self?.viewModel.authUser(viewController: self)
-        }
+
         return temp
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureButtonAction()
+    }
+    
+    func configureButtonAction() {
+        googleSignInButton.setButtonAction {
+            self.viewModel.authUser(viewController: self, completion: { [weak self] in
+                guard let data = self?.viewModel.getData() else { return }
+                let vc = CitySelectionBuilder.build(data: data)
+                self?.navigationController?.pushViewController(vc, animated: true)
+            })
+        }
     }
     
     override func addViewComponents() {

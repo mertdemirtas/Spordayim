@@ -14,6 +14,14 @@
 		400A72F42A044B4400A6E1B8 /* SelectionTableViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A72F32A044B4400A6E1B8 /* SelectionTableViewCellData.swift */; };
 		400A72F62A044B7400A6E1B8 /* SelectionCardViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A72F52A044B7400A6E1B8 /* SelectionCardViewButton.swift */; };
 		400A72F82A0521FB00A6E1B8 /* CitiesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A72F72A0521FB00A6E1B8 /* CitiesHelper.swift */; };
+		400A72FB2A055FD600A6E1B8 /* DistrictSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A72FA2A055FD600A6E1B8 /* DistrictSelectionViewController.swift */; };
+		400A72FD2A055FE000A6E1B8 /* DistrictSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A72FC2A055FE000A6E1B8 /* DistrictSelectionViewModel.swift */; };
+		400A72FF2A055FED00A6E1B8 /* DistrictSelectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A72FE2A055FED00A6E1B8 /* DistrictSelectionBuilder.swift */; };
+		400A73022A05753700A6E1B8 /* RoleSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A73012A05753700A6E1B8 /* RoleSelectionViewController.swift */; };
+		400A73042A05754300A6E1B8 /* RoleSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A73032A05754300A6E1B8 /* RoleSelectionViewModel.swift */; };
+		400A73062A05754B00A6E1B8 /* RoleSelectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A73052A05754B00A6E1B8 /* RoleSelectionBuilder.swift */; };
+		400A73092A05762F00A6E1B8 /* MainRoleSelectionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A73082A05762F00A6E1B8 /* MainRoleSelectionComponent.swift */; };
+		400A730B2A05765800A6E1B8 /* MainRoleSelectionComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A730A2A05765800A6E1B8 /* MainRoleSelectionComponentData.swift */; };
 		401E6FBC29E9968D00073410 /* TabBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FBB29E9968D00073410 /* TabBarComponent.swift */; };
 		401E6FBF29E9971600073410 /* TabBarControllerComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FBE29E9971600073410 /* TabBarControllerComponentData.swift */; };
 		401E6FC129E99ADA00073410 /* TabBarControllerViewControllerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401E6FC029E99ADA00073410 /* TabBarControllerViewControllerData.swift */; };
@@ -87,6 +95,14 @@
 		400A72F32A044B4400A6E1B8 /* SelectionTableViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTableViewCellData.swift; sourceTree = "<group>"; };
 		400A72F52A044B7400A6E1B8 /* SelectionCardViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCardViewButton.swift; sourceTree = "<group>"; };
 		400A72F72A0521FB00A6E1B8 /* CitiesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesHelper.swift; sourceTree = "<group>"; };
+		400A72FA2A055FD600A6E1B8 /* DistrictSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictSelectionViewController.swift; sourceTree = "<group>"; };
+		400A72FC2A055FE000A6E1B8 /* DistrictSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictSelectionViewModel.swift; sourceTree = "<group>"; };
+		400A72FE2A055FED00A6E1B8 /* DistrictSelectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictSelectionBuilder.swift; sourceTree = "<group>"; };
+		400A73012A05753700A6E1B8 /* RoleSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectionViewController.swift; sourceTree = "<group>"; };
+		400A73032A05754300A6E1B8 /* RoleSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectionViewModel.swift; sourceTree = "<group>"; };
+		400A73052A05754B00A6E1B8 /* RoleSelectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectionBuilder.swift; sourceTree = "<group>"; };
+		400A73082A05762F00A6E1B8 /* MainRoleSelectionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRoleSelectionComponent.swift; sourceTree = "<group>"; };
+		400A730A2A05765800A6E1B8 /* MainRoleSelectionComponentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRoleSelectionComponentData.swift; sourceTree = "<group>"; };
 		401E6FBB29E9968D00073410 /* TabBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarComponent.swift; sourceTree = "<group>"; };
 		401E6FBE29E9971600073410 /* TabBarControllerComponentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerComponentData.swift; sourceTree = "<group>"; };
 		401E6FC029E99ADA00073410 /* TabBarControllerViewControllerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerViewControllerData.swift; sourceTree = "<group>"; };
@@ -198,6 +214,35 @@
 				400A72F52A044B7400A6E1B8 /* SelectionCardViewButton.swift */,
 			);
 			path = "Selection Table View Cell";
+			sourceTree = "<group>";
+		};
+		400A72F92A055FBF00A6E1B8 /* District Selection */ = {
+			isa = PBXGroup;
+			children = (
+				400A72FA2A055FD600A6E1B8 /* DistrictSelectionViewController.swift */,
+				400A72FC2A055FE000A6E1B8 /* DistrictSelectionViewModel.swift */,
+				400A72FE2A055FED00A6E1B8 /* DistrictSelectionBuilder.swift */,
+			);
+			path = "District Selection";
+			sourceTree = "<group>";
+		};
+		400A73002A05752600A6E1B8 /* Role Selection */ = {
+			isa = PBXGroup;
+			children = (
+				400A73012A05753700A6E1B8 /* RoleSelectionViewController.swift */,
+				400A73032A05754300A6E1B8 /* RoleSelectionViewModel.swift */,
+				400A73052A05754B00A6E1B8 /* RoleSelectionBuilder.swift */,
+			);
+			path = "Role Selection";
+			sourceTree = "<group>";
+		};
+		400A73072A05761300A6E1B8 /* Main Role Selection */ = {
+			isa = PBXGroup;
+			children = (
+				400A73082A05762F00A6E1B8 /* MainRoleSelectionComponent.swift */,
+				400A730A2A05765800A6E1B8 /* MainRoleSelectionComponentData.swift */,
+			);
+			path = "Main Role Selection";
 			sourceTree = "<group>";
 		};
 		401E6FBD29E996C300073410 /* Tab Bar Component */ = {
@@ -331,6 +376,7 @@
 		4030029C29D712B900899CF5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				400A73072A05761300A6E1B8 /* Main Role Selection */,
 				400A72ED2A044A6000A6E1B8 /* Selection Component */,
 				400A72EA2A04446100A6E1B8 /* Profile Create Information Component */,
 				401E6FD929E9D54A00073410 /* Search Controller */,
@@ -433,6 +479,8 @@
 		403002D629D72ADE00899CF5 /* User Profile Information Screens */ = {
 			isa = PBXGroup;
 			children = (
+				400A73002A05752600A6E1B8 /* Role Selection */,
+				400A72F92A055FBF00A6E1B8 /* District Selection */,
 				403002D729D72B5100899CF5 /* City Selection */,
 			);
 			path = "User Profile Information Screens";
@@ -562,9 +610,11 @@
 				403002E729D73D0A00899CF5 /* AppSettingsBuilder.swift in Sources */,
 				400A72EF2A044AA800A6E1B8 /* SelectionComponent.swift in Sources */,
 				401E6FCD29E9BF3F00073410 /* ImageViewComponentEnum.swift in Sources */,
+				400A72FF2A055FED00A6E1B8 /* DistrictSelectionBuilder.swift in Sources */,
 				403002D929D72B6500899CF5 /* CitySelectionViewController.swift in Sources */,
 				4030029129D712AF00899CF5 /* BaseViewController.swift in Sources */,
 				401E6FBF29E9971600073410 /* TabBarControllerComponentData.swift in Sources */,
+				400A73092A05762F00A6E1B8 /* MainRoleSelectionComponent.swift in Sources */,
 				401E6FC829E9B0DC00073410 /* UserProfileBuilder.swift in Sources */,
 				403002A629D712C700899CF5 /* UIColor+Extension.swift in Sources */,
 				401E6FE429E9D68400073410 /* SearchScreenBuilder.swift in Sources */,
@@ -580,9 +630,11 @@
 				400A72F22A044ADF00A6E1B8 /* SelectionTableViewCell.swift in Sources */,
 				403002D529D7290000899CF5 /* MainMenuRouter.swift in Sources */,
 				401E6FDF29E9D5D400073410 /* SearchScreenViewController.swift in Sources */,
+				400A73022A05753700A6E1B8 /* RoleSelectionViewController.swift in Sources */,
 				403002DB29D72B6D00899CF5 /* CitySelectionViewModel.swift in Sources */,
 				4030029429D712AF00899CF5 /* GenericCollectionViewCell.swift in Sources */,
 				4030029529D712AF00899CF5 /* GenericBaseView.swift in Sources */,
+				400A72FB2A055FD600A6E1B8 /* DistrictSelectionViewController.swift in Sources */,
 				4030027029D7126A00899CF5 /* AppDelegate.swift in Sources */,
 				4030029629D712AF00899CF5 /* BaseSearchController.swift in Sources */,
 				401E6FD829E9CC6600073410 /* UserProfileInformationComponentData.swift in Sources */,
@@ -593,6 +645,7 @@
 				4030029829D712AF00899CF5 /* BaseTableView.swift in Sources */,
 				4030029229D712AF00899CF5 /* BaseTableViewCell.swift in Sources */,
 				401E6FD329E9C06000073410 /* UserProfileInformationData.swift in Sources */,
+				400A72FD2A055FE000A6E1B8 /* DistrictSelectionViewModel.swift in Sources */,
 				403002D129D727E500899CF5 /* MainMenuViewModel.swift in Sources */,
 				403002A729D712C700899CF5 /* UIView+Extension.swift in Sources */,
 				401E6FDD29E9D57300073410 /* SearchControllerViewModel.swift in Sources */,
@@ -607,9 +660,12 @@
 				400A72F42A044B4400A6E1B8 /* SelectionTableViewCellData.swift in Sources */,
 				401E6FC429E9B0C500073410 /* UserProfileViewController.swift in Sources */,
 				401E6FDB29E9D56100073410 /* SearchController.swift in Sources */,
+				400A73042A05754300A6E1B8 /* RoleSelectionViewModel.swift in Sources */,
+				400A730B2A05765800A6E1B8 /* MainRoleSelectionComponentData.swift in Sources */,
 				4030029329D712AF00899CF5 /* BaseCollectionViewCell.swift in Sources */,
 				4030029729D712AF00899CF5 /* BaseLabel.swift in Sources */,
 				403002E929D73D1300899CF5 /* AppSettingsViewModel.swift in Sources */,
+				400A73062A05754B00A6E1B8 /* RoleSelectionBuilder.swift in Sources */,
 				401E6FBC29E9968D00073410 /* TabBarComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

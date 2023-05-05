@@ -13,19 +13,31 @@ import GoogleSignIn
 
 class LoginPageViewModel: BaseViewModel {
     
+    private var credential: AuthCredential?
+    private var data: CitySelectionData?
+    
     override init() {
         super.init()
-        deneme()
     }
     
-    func deneme() {
-        
+    func getData() -> CitySelectionData? {
+        guard let data = self.data else { return nil }
+        return data
     }
     
-    func authUser(viewController: UIViewController?) {
+    func getCredential() -> AuthCredential? {
+        guard let credential = self.credential else { return nil }
+        return credential
+    }
+    
+    func authUser(viewController: UIViewController?, completion: @escaping () -> Void) {
         guard let viewController = viewController else { return }
         
+        
         auth(viewController: viewController, completion: { [weak self] in
+            completion()
+            
+            /*
             let homePage = TabBarControllerViewControllerData(viewController: MainMenuBuilder.build(), tabBarControllerImageName: "house")
             
             let settingsPage = TabBarControllerViewControllerData(viewController: SearchScreenBuilder.build(), tabBarControllerImageName: "magnifyingglass")
@@ -39,9 +51,9 @@ class LoginPageViewModel: BaseViewModel {
             viewController.view.window?.rootViewController = tabBar
             viewController.view.window?.overrideUserInterfaceStyle = .light
             viewController.view.window?.makeKeyAndVisible()
+             */
         })
-
-
+         
     }
     
     private func auth(viewController: UIViewController?, completion: @escaping () -> Void) {
@@ -69,9 +81,13 @@ class LoginPageViewModel: BaseViewModel {
             }
             
             let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: user.accessToken.tokenString)
+            self.credential = credential
             
-            fireBaseManager.authUser(with: credential) { err in
-                guard err == nil else { return }
+            fireBaseManager.authUser(with: credential) { [weak self] uid in
+                guard let userFullname = user.profile?.name else { return }
+                guard let userEmail = user.profile?.email else { return }
+                let temp = CitySelectionData(name: userFullname, uid: uid, email: userEmail, credential: credential)
+                self?.data = temp
                 completion()
             }
         }

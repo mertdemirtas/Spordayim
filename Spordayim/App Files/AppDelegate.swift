@@ -29,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             
             else {
+                
                 let homePage = TabBarControllerViewControllerData(viewController: MainMenuBuilder.build(), tabBarControllerImageName: "house")
                 
                 let settingsPage = TabBarControllerViewControllerData(viewController: SearchScreenBuilder.build(), tabBarControllerImageName: "magnifyingglass")

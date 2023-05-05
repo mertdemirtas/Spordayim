@@ -8,5 +8,5 @@
 import Foundation
 
 struct SelectionTableViewCellData {
-    let label: String?
+    let label: String
 }

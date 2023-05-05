@@ -1,14 +1,13 @@
 //
-//  SceneOneViewController.swift
+//  DistrictSelectionViewController.swift
 //  Spordayim
 //
-//  Created by Mert Demirtas on 31.03.2023.
+//  Created by Mert Demirtas on 5.05.2023.
 //
 
-import Foundation
 import UIKit
 
-class CitySelectionViewController: BaseViewController<CitySelectionViewModel> {
+class DistrictSelectionViewController: BaseViewController<DistrictSelectionViewModel> {
     private lazy var tableView: BaseTableView = {
         let temp = BaseTableView()
         temp.registerCell(cells: [SelectionTableViewCell.self])
@@ -33,23 +32,21 @@ class CitySelectionViewController: BaseViewController<CitySelectionViewModel> {
     }
 }
 
-extension CitySelectionViewController: UITableViewDataSource {
+extension DistrictSelectionViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.getNumberOfCities()
+        return viewModel.getDistrictCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "SelectionTableViewCell", for: indexPath) as? SelectionTableViewCell else { return UITableViewCell() }
-        let data = viewModel.getCityData(index: indexPath)
+        let data = viewModel.getDistrinct(indexPath: indexPath)
         cell.setData(data: SelectionTableViewCellData(label: data))
         
         cell.genericView.setButtonAction { [weak self] in
-            guard let previousData = self?.viewModel.returnData() else { return }
-            
-            let iterationData = DistrictSelectionData(name: previousData.name, uid: previousData.uid, email: previousData.email, city: data, credential: previousData.credential)
-            let vc = DistrictSelectionBuilder.build(city: data, data: iterationData)
-            
-            self?.navigationController?.pushViewController(vc, animated: true)
+            guard let prevData = self?.viewModel.getData() else { return }
+            let data = RoleSelectionData(name: prevData.name, uid: prevData.uid, email: prevData.email, city: prevData.city, district: data, credential: prevData.credential)
+            let viewController = RoleSelectionBuilder.build(data: data)
+            self?.navigationController?.pushViewController(viewController, animated: true)
         }
         return cell
     }

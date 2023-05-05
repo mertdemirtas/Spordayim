@@ -1,14 +1,13 @@
 //
-//  SceneOneViewController.swift
+//  RoleSelectionViewController.swift
 //  Spordayim
 //
-//  Created by Mert Demirtas on 31.03.2023.
+//  Created by Mert Demirtas on 5.05.2023.
 //
 
-import Foundation
 import UIKit
 
-class CitySelectionViewController: BaseViewController<CitySelectionViewModel> {
+class RoleSelectionViewController: BaseViewController<RoleSelectionViewModel> {
     private lazy var tableView: BaseTableView = {
         let temp = BaseTableView()
         temp.registerCell(cells: [SelectionTableViewCell.self])
@@ -33,24 +32,35 @@ class CitySelectionViewController: BaseViewController<CitySelectionViewModel> {
     }
 }
 
-extension CitySelectionViewController: UITableViewDataSource {
+extension RoleSelectionViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.getNumberOfCities()
+        return viewModel.getNumberOfRoles()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "SelectionTableViewCell", for: indexPath) as? SelectionTableViewCell else { return UITableViewCell() }
-        let data = viewModel.getCityData(index: indexPath)
+        let data = viewModel.getRole(indexPath: indexPath)
+        
         cell.setData(data: SelectionTableViewCellData(label: data))
         
         cell.genericView.setButtonAction { [weak self] in
-            guard let previousData = self?.viewModel.returnData() else { return }
-            
-            let iterationData = DistrictSelectionData(name: previousData.name, uid: previousData.uid, email: previousData.email, city: data, credential: previousData.credential)
-            let vc = DistrictSelectionBuilder.build(city: data, data: iterationData)
-            
-            self?.navigationController?.pushViewController(vc, animated: true)
+            self?.viewModel.createUserDataToDatabase(role: data, completion: {
+                let homePage = TabBarControllerViewControllerData(viewController: MainMenuBuilder.build(), tabBarControllerImageName: "house")
+                
+                let settingsPage = TabBarControllerViewControllerData(viewController: SearchScreenBuilder.build(), tabBarControllerImageName: "magnifyingglass")
+                
+                let profilePage = TabBarControllerViewControllerData(viewController: UserProfileBuilder.build(), tabBarControllerImageName: "person")
+                
+                let tabBarData = TabBarControllerComponentData(items: [homePage, settingsPage, profilePage])
+                
+                let tabBar = TabBarComponent(with: tabBarData)
+                
+                self?.view.window?.rootViewController = tabBar
+                self?.view.window?.overrideUserInterfaceStyle = .light
+                self?.view.window?.makeKeyAndVisible()
+            })
         }
+        
         return cell
     }
 }
