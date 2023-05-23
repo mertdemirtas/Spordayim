@@ -8,6 +8,14 @@
 import UIKit
 
 class UserProfileInformationComponent: GenericBaseView<UserProfileInformationComponentData> {
+    private lazy var stackView: UIStackView = {
+        let temp = UIStackView()
+        temp.axis = .vertical
+        temp.spacing = 20.0
+        temp.distribution = .fillProportionally
+        temp.translatesAutoresizingMaskIntoConstraints = false
+        return temp
+    }()
     private lazy var containerView: UIStackView = {
         let temp = UIStackView()
         temp.axis = .horizontal
@@ -38,17 +46,21 @@ class UserProfileInformationComponent: GenericBaseView<UserProfileInformationCom
         temp.heightAnchor.constraint(equalToConstant: 100).isActive = true
         temp.layer.borderWidth = 1.0
         temp.layer.masksToBounds = false
-        temp.layer.borderColor = UIColor.black.cgColor
+        temp.layer.borderColor = UIColor.darkGray.cgColor
         temp.layer.cornerRadius = 50.0
         temp.clipsToBounds = true
         temp.translatesAutoresizingMaskIntoConstraints = false
         return temp
     }()
     
-    private lazy var userNameLabel: BaseLabel = {
-        let temp = BaseLabel()
-        temp.font = .systemFont(ofSize: 20)
-        temp.tintColor = .black
+    private lazy var accountInfo: UserAccountInfoComponent = {
+        let temp = UserAccountInfoComponent()
+        temp.translatesAutoresizingMaskIntoConstraints = false
+        return temp
+    }()
+    
+    private lazy var socialInfo: UserSocialInfoCardView = {
+        let temp = UserSocialInfoCardView()
         temp.translatesAutoresizingMaskIntoConstraints = false
         return temp
     }()
@@ -70,45 +82,40 @@ class UserProfileInformationComponent: GenericBaseView<UserProfileInformationCom
     }()
     
     override func addMajorViewComponents() {
-        addSubview(containerView)
+        addSubview(stackView)
         addSubview(blackLine)
-        
-        containerView.addArrangedSubview(profileImageView)
-        containerView.addArrangedSubview(verticalStackView)
+        stackView.addArrangedSubview(profileImageView)
+        stackView.addArrangedSubview(accountInfo)
+        stackView.addArrangedSubview(socialInfo)
         
         profileImageView.addSubview(profileImage)
-        
-        verticalStackView.addArrangedSubview(userNameLabel)
-        verticalStackView.addArrangedSubview(userAgeLabel)
-        
+
         NSLayoutConstraint.activate([
-            profileImage.centerYAnchor.constraint(equalTo: profileImageView.centerYAnchor),
-            profileImage.leadingAnchor.constraint(equalTo: profileImageView.leadingAnchor, constant: 16.0),
-            profileImage.trailingAnchor.constraint(equalTo: profileImageView.trailingAnchor, constant: -16.0),
+
+            stackView.topAnchor.constraint(equalTo: topAnchor, constant: 10.0),
+            stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10.0),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10.0),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0),
             
-            containerView.topAnchor.constraint(equalTo: topAnchor),
-            containerView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            containerView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            containerView.bottomAnchor.constraint(equalTo: blackLine.topAnchor),
-            
-            blackLine.leadingAnchor.constraint(equalTo: leadingAnchor),
-            blackLine.trailingAnchor.constraint(equalTo: trailingAnchor),
-            blackLine.bottomAnchor.constraint(equalTo: bottomAnchor),
+            profileImage.centerXAnchor.constraint(equalTo: profileImageView.centerXAnchor),
+            profileImage.topAnchor.constraint(equalTo: profileImageView.topAnchor),
+            profileImage.bottomAnchor.constraint(equalTo: profileImageView.bottomAnchor),
+
         ])
     }
     
     override func loadDataView() {
         guard let data = returnData() else { return }
-        
-        if let userImage = data.userProfileImage {
+        if let userImage = data.userProfileInfoData?.profileImage {
             profileImage.setImage(componentType: .fromURL(url: userImage))
         }
         
-        if let userName = data.name {
-            userNameLabel.text = userName
-        }
+        let cityInfo = "\(data.userProfileInfoData?.city ?? ""), \(data.userProfileInfoData?.district ?? "")"
+        accountInfo.setData(by: UserAccountInfoComponentData(userName: data.userProfileInfoData?.name, mainPosition: data.userProfileInfoData?.mainRole, cityInfo: cityInfo))
         
-        if let userAge = data.birthdayDate {
+        socialInfo.setData(by: data.socialInfo)
+        
+        if let userAge = data.userProfileInfoData?.birthdayDate {
             userAgeLabel.text = userAge
         }
     }

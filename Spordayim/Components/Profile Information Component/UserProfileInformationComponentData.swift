@@ -8,7 +8,6 @@
 import Foundation
 
 struct UserProfileInformationComponentData {
-    let name: String?
-    let userProfileImage: String?
-    let birthdayDate: String?
+    var userProfileInfoData: UserProfileFirebaseData?
+    var socialInfo: UserSocialInfoCardViewData?
 }

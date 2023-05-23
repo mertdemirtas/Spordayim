@@ -7,8 +7,14 @@
 
 import FirebaseAuth
 
+protocol UserProfileViewModelDelegate: AnyObject {
+    func reloadData()
+}
+
 class UserProfileViewModel: BaseViewModel {
     private var userProfileInformationData: UserProfileInformationComponentData?
+    private var fireBaseManager = FirebaseMaganer()
+    weak var delegate: UserProfileViewModelDelegate?
     
     override init() {
         super.init()
@@ -17,10 +23,31 @@ class UserProfileViewModel: BaseViewModel {
     
     private func getUserProfileInformations() -> UserProfileInformationComponentData? {
         guard let user = Auth.auth().currentUser else { return nil }
+        var profileData: UserProfileFirebaseData?
+        var socialInfoData: UserSocialInfoCardViewData?
         
-        let profileInformationData = UserProfileInformationComponentData(name: user.displayName, userProfileImage: user.photoURL?.absoluteString ?? "", birthdayDate: "05.06.1999")
-        
-        return profileInformationData
+        fireBaseManager.getUserData(userUID: user.uid, completion: { [weak self] result in
+            switch result {
+            case .success(let data):
+                profileData = data
+                
+                self?.fireBaseManager.getFriendShips(userUID: user.uid, completion: { [weak self] result in
+                    switch result {
+                    case .success(let data):
+                        let numberOfFriends = data.friendships.count
+                        socialInfoData = UserSocialInfoCardViewData(numberOfFriends: numberOfFriends, friendShipStatus: .accountHolder)
+                        self?.userProfileInformationData = UserProfileInformationComponentData(userProfileInfoData: profileData, socialInfo: socialInfoData)
+                        self?.delegate?.reloadData()
+                    case .failure(let error):
+                        print(error)
+                    }
+                })
+            
+            case .failure(let error):
+                print(error)
+            }
+        })
+        return userProfileInformationData
     }
     
     public func returnUserProfileInformationData() -> UserProfileInformationComponentData? {

@@ -9,8 +9,8 @@ import UIKit
 
 class SearchScreenViewController: BaseViewController<BaseViewModel> {
     // MARK: Components
-    private lazy var searchController: SearchController = {
-        let temp = SearchController(viewModel: SearchControllerViewModel())
+    private lazy var searchController: UserSearchController = {
+        let temp = UserSearchController(viewModel: UserSearchControllerViewModel())
         return temp
     }()
 

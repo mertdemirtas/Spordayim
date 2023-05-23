@@ -38,11 +38,21 @@ class BaseButton<T>: GenericBaseView<T>, UIGestureRecognizerDelegate {
         }
     }
     
-    open func addViewOnCenter(view: UIView) {
+    public func addViewOnCenter(view: UIView) {
         addSubview(view)
         NSLayoutConstraint.activate([
             view.centerXAnchor.constraint(equalTo: centerXAnchor),
             view.centerYAnchor.constraint(equalTo: centerYAnchor)
+        ])
+    }
+    
+    public func addView(view: UIView) {
+        addSubview(view)
+        NSLayoutConstraint.activate([
+            view.topAnchor.constraint(equalTo: topAnchor),
+            view.leadingAnchor.constraint(equalTo: leadingAnchor),
+            view.trailingAnchor.constraint(equalTo: trailingAnchor),
+            view.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }
     

@@ -18,6 +18,8 @@ class MainMenuViewController: BaseViewController<MainMenuViewModel> {
         super.viewDidLoad()
     }
     
+    
+    
     override func addViewComponents() {
         super.addViewComponents()
     }
